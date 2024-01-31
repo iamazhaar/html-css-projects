@@ -1,0 +1,248 @@
+:root
+{
+    --bg: #f0f2f5;
+    --blue: #1877f2;
+    --white: #fff;
+    --drak-blue: #1260c4;
+    --green: #42b72a;
+    --dark-green: #369423;
+    --footer-color: #7e7e7e;
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    height: 100vh;
+    background-color: var(--bg);
+    font-family: Helvetica, sans-serif;
+    position: relative;
+}
+
+.main-wrapper
+{
+    width: 400px;
+    height: 680px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.branding
+{
+    text-align: center;
+}
+
+.slogan
+{
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-top: -10px;
+    margin-bottom: 45px;
+}
+
+.panel
+{
+    background-color: var(--white);
+    width: 400px;
+    padding: 20px 15px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px rgba(150, 150, 150, 0.2), -1px -1px 5px rgba(150, 150, 150, 0.2);
+    text-align: center;
+}
+
+input 
+{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #d2d2d2;
+    border-radius: 6px;
+    font-size: 1.0rem;
+}
+
+input:focus
+{
+    outline: 1px solid var(--blue);
+}
+
+input:focus::placeholder
+{
+    color: #d2d2d2;
+}
+
+.login-in-button
+{
+    background-color: var(--blue);
+    border: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition-property: background-color;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+}
+
+.login-in-button:hover 
+{
+    background-color: var(--drak-blue);
+    cursor: pointer;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.forgot
+{
+    font-size: 0.9rem;
+    color: var(--blue);
+    font-weight: 549;
+}
+
+hr 
+{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    opacity: 0.3;
+}
+
+.register-btn
+{
+    background-color: var(--green);
+    color: var(--white);
+    padding: 16px 19px;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    margin-bottom: 3px;
+    transition-property: background-color;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
+}
+
+.register-btn:hover
+{
+    text-decoration: none;
+    background-color: var(--dark-green);
+}
+
+.bottom-link
+{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bottom-link p 
+{
+    font-size: 0.9rem;
+}
+
+.page
+{
+    color: black;
+    font-weight: 550;
+}
+
+footer 
+{
+    width: 100%;
+    background-color: var(--white);
+    padding: 25px 35px;
+    color: var(--footer-color);
+    position: absolute;
+    top: 710px;
+    padding-left: 50px;
+}
+
+ul
+{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer ul li a 
+{
+    color: var(--footer-color);
+    font-size: 0.75rem;
+    margin-right: 10px;
+}
+
+.footer-line
+{
+    max-width: 950px;
+    margin: 7px 177.500px;
+}
+
+.plus-symbol 
+{
+    width: 40px;
+    height: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #F2F2F2;
+    padding: 0px 11px;
+}
+
+.plus-symbol:hover 
+{
+    text-decoration: none;
+    background-color: #d4d4d4;
+}
+
+.last-div 
+{
+    font-size: 0.7rem;
+    margin: 10px 177.500px;
+}
+
+@media (min-width:890px) {
+    .main-wrapper
+    {
+        width: 90%;
+        max-width: 980px;
+        flex-direction: row;
+        padding-top: 125px;
+        justify-content: space-between;
+    }
+
+    .branding
+    {
+        text-align: left;
+        width: 520px;
+        margin-top: 40px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    
+    .slogan
+    {
+        padding-left: 25px;
+    }
+}
